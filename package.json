@@ -1,0 +1,28 @@
+{
+  "name": "ishchenko_hw_4",
+  "version": "1.0.0",
+  "description": "hw upgraded by sass and bem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh-frontend-js-9/ishchenko_hw_4.git"
+  },
+  "author": "ishchenko oleksii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gh-frontend-js-9/ishchenko_hw_4/issues"
+  },
+  "homepage": "https://github.com/gh-frontend-js-9/ishchenko_hw_4#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
