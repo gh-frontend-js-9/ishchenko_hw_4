@@ -1,7 +1,7 @@
 .flex_footer{
 	display: flex;
 	justify-content: center;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid $white;
 }
 
 @media(max-width: 520px){
@@ -24,15 +24,15 @@
 	font-size: 2em;
 	padding: 1em;
 	padding-left: 0;
-	color: #d3d1da;
+	color: $light-grey-heading;
 	font-weight: bold;
 }
 
 .go_button{
 	border:0;
 	padding: .5em 1.5em;
-	background-color: #f4f4f4;
-	color:#4b3b4e;
+	background-color: $light-grey;
+	color:$dark-violet;
 	margin:1em;
 	margin-left: 0; 
 }
@@ -46,7 +46,7 @@
 .text{
 	font-size: .8em;
 	line-height: 2;
-	color: #848e97;
+	color: $dast-grey;
 }
 
 .lower_heading_popular,
@@ -54,7 +54,7 @@
 	font-weight: bold;
 	padding: 1em;
 	padding-left: 0;
-	color:#4b3b4e;
+	color:$dark-violet;
 }
 
 .lower_footer_heading{
@@ -78,7 +78,7 @@
 .availible{
 	font-weight:bold;
 	font-size: .8em;
-	color: #848e97;
+	color: $dast-grey;
 }
 
 .logo_footer,

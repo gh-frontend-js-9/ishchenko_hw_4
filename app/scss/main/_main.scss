@@ -1,5 +1,5 @@
 .features_background{
-	background-color: #f4f4f4;
+	background-color: $light-grey;
 }
 
 .flex{
@@ -46,19 +46,19 @@
 }
 
 .make_web_better{
-	background-image:url(img/icon_better.png);
+	background-image:url(/img/icon_better.png);
 }
 
 .power_tool{
-	background-image:url(img/icon_powerfull.png);
+	background-image:url(/img/icon_powerfull.png);
 }
 
 .experimental_stuff{
-	background-image:url(img/icon_stuff.png);
+	background-image:url(/img/icon_stuff.png);
 }
 
 .created{
-	background-image:url(img/icon_created.png);
+	background-image:url(/img/icon_created.png);
 }
 
 .code_example{
@@ -74,7 +74,7 @@
 .code_heading{
 	font-size: 2em;
 	font-weight: bold;
-	color: #8d81ac;
+	color: $violet-color;
 	text-transform: uppercase;
 }
 
@@ -94,7 +94,7 @@
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	background-color: #8d81ac;
+	background-color: $violet-color;
 }
 
 .author_side{
@@ -108,7 +108,7 @@
 }
 
 .author_nick{
-	color:#8d81ac;
+	color:$violet-color;
 }
 
 .social_link{
@@ -119,29 +119,29 @@
 }
 
 .git{
-	background-color: #f4f4f4;
-	color: #000;
+	background-color: $light-grey;
+	color: $black;
 }
 
 .twit{
-	background-color: #26a6d1;
-	color: #fff;
+	background-color: $twit-color;
+	color: $white;
 }
 
 .face{
-	background-color: #3b5998;
-	color: #fff;
+	background-color: $face-color;
+	color: $white;
 }
 
 /*feedback and price blocks*/
 .feedback{
-	background-color: #4b3b4e;
-	border-bottom: 1px solid #645766;
+	background-color: $dark-violet;
+	border-bottom: 1px solid $feedback-bottom-color;
 }
 
 .heading_feedback{
 	padding: 1em;
-	color: #fff;
+	color: $white;
 	font-size: 3em;
 	font-weight: bold;
 }
@@ -155,7 +155,7 @@
 .flex_feedback{
 	display: flex;
 	flex-wrap: wrap;
-	color: #fff;
+	color: $white;
 }
 
 .feedback_article{
@@ -182,7 +182,7 @@
 }
 
 .price{
-	background-color: #4b3b4e;
+	background-color: $dark-violet;
 }
 
 .flex_price{
@@ -192,13 +192,13 @@
 }
 
 .cost_block{
-	background-color: #5f5161;
+	background-color: $light-violet;
 	text-align: center;
 	margin:0 1em 1em 1em;
 }
 
 .cost_block:hover{
-	background-color: #413344;
+	background-color: $dark-violet-hover;
 }
 
 @media(max-width: 520px){
@@ -214,13 +214,13 @@
 .tarif_type{
 	text-transform: uppercase;
 	font-weight: bold;
-	color:#fff; 
+	color:$white; 
 	padding: 1em;
-	background-color: #685b6a;
+	background-color: $half-opacity-grey;
 }
 
 .money{
-	color: #fff;
+	color: $white;
 	font-size: 3em;
 	font-weight: bold;
 	padding: 1em;
@@ -228,25 +228,25 @@
 
 .period{
 	text-transform: uppercase;
-	color:#8f8691;
+	color:$grey-text;
 	font-size: .8em;
 }
 
 .line{
-	border:2px solid #685b6a;
+	border:2px solid $half-opacity-grey;
 	width: 20%;
 	margin:1em auto;
 }
 
 .what_you_get{
-	color: #fff;
+	color:$white;
 	font-weight: bold;
 }
 
 .accept_button{
 	display: inline-block;
-	background-color: #685b6a;
-	color: #fff;
+	background-color: $half-opacity-grey;
+	color: $white;
 	margin:2em 0 1em 0;
 	padding: .5em 2em;
 	border:0;
@@ -255,7 +255,7 @@
 }
 
 .price_description{
-	color:#685b6a;
+	color: $half-opacity-grey;
 	font-size: .5em;
 	text-align: center;
 	padding: 2em;
@@ -263,7 +263,7 @@
 
 /*Subscribe input*/
 .subscribe{
-	background-color:#f4f4f4;
+	background-color:$light-grey;
 	padding: 1em;
 }
 
@@ -271,7 +271,7 @@
 	display: inline-block;
 	font-size: 2em;
 	font-weight: bold;
-	color:#4b3b4e;
+	color:$dark-violet;
 	margin-right: 3em;
 }
 
@@ -298,9 +298,9 @@
 }
 
 .subscribe_button{
-	color:#fff;
+	color:$white;
 	border:0;
 	border-radius: 1em;
 	padding: .5em 1em;
-	background-color: #4b3b4e;
+	background-color: $dark-violet;
 }
