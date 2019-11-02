@@ -15,12 +15,6 @@ gulp.task('html', function () {
 		.pipe(browserSync.reload({stream:true}))	
 });
 
-gulp.task('concat', function () {
- return gulp.src('app/css/**/*.css')
-   .pipe(concat("main.css"))
-   .pipe(gulp.dest('app/css/'));
-});
-
 gulp.task('watch', function(){
 	gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'))
 	gulp.watch('app/**/*.html',  gulp.parallel('html'))

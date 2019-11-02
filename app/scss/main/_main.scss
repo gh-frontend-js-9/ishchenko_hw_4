@@ -1,0 +1,306 @@
+.features_background{
+	background-color: #f4f4f4;
+}
+
+.flex{
+	display: flex;
+	padding: 2em;
+}
+
+.features{
+	margin:1.5em;
+}
+
+.article_features{
+	width: 100%
+
+}
+
+.features_heading{
+	line-height: 2;
+	font-weight: bold;
+	padding: 1em;
+}
+
+.features_text{
+	font-size: .9em;
+	line-height: 2;
+	overflow: auto;
+}
+
+
+.img_style{
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	width: 120px;
+	height: 100px;
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
+.make_web_better{
+	background-image:url(img/icon_better.png);
+}
+
+.power_tool{
+	background-image:url(img/icon_powerfull.png);
+}
+
+.experimental_stuff{
+	background-image:url(img/icon_stuff.png);
+}
+
+.created{
+	background-image:url(img/icon_created.png);
+}
+
+.code_example{
+	position: relative;
+}
+
+@media(max-width: 520px){
+	.code_example{
+		display: none;
+	}
+}
+
+.code_heading{
+	font-size: 2em;
+	font-weight: bold;
+	color: #8d81ac;
+	text-transform: uppercase;
+}
+
+.code{
+	position: absolute;
+}
+
+/*author block*/
+.photo_center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+}
+
+.photo_strange{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #8d81ac;
+}
+
+.author_side{
+	margin-left: 1em;
+}
+
+.author_name{
+	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 2; 
+}
+
+.author_nick{
+	color:#8d81ac;
+}
+
+.social_link{
+	display: inline-block;
+	margin: 2em;
+	padding: 1em 5em;
+	text-decoration: none;
+}
+
+.git{
+	background-color: #f4f4f4;
+	color: #000;
+}
+
+.twit{
+	background-color: #26a6d1;
+	color: #fff;
+}
+
+.face{
+	background-color: #3b5998;
+	color: #fff;
+}
+
+/*feedback and price blocks*/
+.feedback{
+	background-color: #4b3b4e;
+	border-bottom: 1px solid #645766;
+}
+
+.heading_feedback{
+	padding: 1em;
+	color: #fff;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+@media(max-width: 520px){
+	.heading_feedback{
+		font-size: 2em;
+	}
+}
+
+.flex_feedback{
+	display: flex;
+	flex-wrap: wrap;
+	color: #fff;
+}
+
+.feedback_article{
+	flex:30%;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 2em;
+	line-height: 2;
+}
+
+@media(max-width: 520px){
+	.flex_feedback{
+		flex-direction: column;
+	}
+
+	.feedback_article{
+		padding: 0 5em 0 5em;
+	}
+}
+
+.logo_feed{
+	margin-bottom: 1em;
+}
+
+.price{
+	background-color: #4b3b4e;
+}
+
+.flex_price{
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.cost_block{
+	background-color: #5f5161;
+	text-align: center;
+	margin:0 1em 1em 1em;
+}
+
+.cost_block:hover{
+	background-color: #413344;
+}
+
+@media(max-width: 520px){
+	.flex_price{
+		flex-direction: column;
+	}
+
+	.cost_block{
+		margin: 0 5em 2em 5em;
+	}
+}
+
+.tarif_type{
+	text-transform: uppercase;
+	font-weight: bold;
+	color:#fff; 
+	padding: 1em;
+	background-color: #685b6a;
+}
+
+.money{
+	color: #fff;
+	font-size: 3em;
+	font-weight: bold;
+	padding: 1em;
+}
+
+.period{
+	text-transform: uppercase;
+	color:#8f8691;
+	font-size: .8em;
+}
+
+.line{
+	border:2px solid #685b6a;
+	width: 20%;
+	margin:1em auto;
+}
+
+.what_you_get{
+	color: #fff;
+	font-weight: bold;
+}
+
+.accept_button{
+	display: inline-block;
+	background-color: #685b6a;
+	color: #fff;
+	margin:2em 0 1em 0;
+	padding: .5em 2em;
+	border:0;
+	border-radius: 1em;
+	text-transform: uppercase;
+}
+
+.price_description{
+	color:#685b6a;
+	font-size: .5em;
+	text-align: center;
+	padding: 2em;
+}
+
+/*Subscribe input*/
+.subscribe{
+	background-color:#f4f4f4;
+	padding: 1em;
+}
+
+.subscribe_heading{
+	display: inline-block;
+	font-size: 2em;
+	font-weight: bold;
+	color:#4b3b4e;
+	margin-right: 3em;
+}
+
+@media(max-width: 520px){
+	.subscribe_heading{
+		display: block;
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 1em;
+	}
+}
+
+.email_input{
+	width: 30%;
+	padding: .5em 0 .5em .5em;
+	border-radius: 2em;
+	border:0;
+}
+
+@media(max-width: 520px){
+	.email_input{
+		width: 75%;
+	}
+}
+
+.subscribe_button{
+	color:#fff;
+	border:0;
+	border-radius: 1em;
+	padding: .5em 1em;
+	background-color: #4b3b4e;
+}
