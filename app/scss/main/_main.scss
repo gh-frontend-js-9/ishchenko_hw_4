@@ -11,25 +11,21 @@
 	margin:1.5em;
 }
 
-.article_features{
-	width: 100%
-
+.article-features{
+	width: 100%;
+	&__heading{
+		line-height: 2;
+		font-weight: bold;
+		padding: 1em;
+	}
+	&__text{
+		font-size: .9em;
+		line-height: 1.5;
+		overflow: auto;
+	}
 }
 
-.features_heading{
-	line-height: 2;
-	font-weight: bold;
-	padding: 1em;
-}
-
-.features_text{
-	font-size: .9em;
-	line-height: 2;
-	overflow: auto;
-}
-
-
-.img_style{
+.img-style{
 	background-repeat: no-repeat;
 	background-position: center;
 	display: flex;
@@ -45,15 +41,15 @@
 	clear: both;
 }
 
-.make_web_better{
+.make-web-better{
 	background-image:url(/img/icon_better.png);
 }
 
-.power_tool{
+.power-tool{
 	background-image:url(/img/icon_powerfull.png);
 }
 
-.experimental_stuff{
+.experimental-stuff{
 	background-image:url(/img/icon_stuff.png);
 }
 
@@ -61,76 +57,83 @@
 	background-image:url(/img/icon_created.png);
 }
 
-.code_example{
+.code-example{
 	position: relative;
 }
 
 @media(max-width: 520px){
-	.code_example{
+	.code-example{
 		display: none;
 	}
 }
 
-.code_heading{
-	font-size: 2em;
+.code-heading{
+	font-size: 2.7em;
 	font-weight: bold;
 	color: $violet-color;
 	text-transform: uppercase;
+	padding-bottom: 1em;
 }
 
 .code{
 	position: absolute;
+	left: 6em;
 }
 
 /*author block*/
-.photo_center{
+.photo{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 1em;
+	&__plays{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: $violet-color;
+	}
 }
 
-.photo_strange{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background-color: $violet-color;
-}
-
-.author_side{
+.side{
 	margin-left: 1em;
+	&__author-name{
+		font-weight: bold;
+		font-size: 1.5em;
+		line-height: 2; 
+	}
+	&__author-nick{
+		color:$violet-color;
+	}
 }
 
-.author_name{
-	font-weight: bold;
-	font-size: 1.5em;
-	line-height: 2; 
+.social{
+	text-align: center;
+	&__link{
+		display: inline-block;
+		margin: 2em;
+		width: 25%;
+		padding: 1em 5em;
+		text-decoration: none;
+	}
+	&_git{
+		background-color: $light-grey;
+		color: $black;
+	}
+	&_twit{
+		background-color: $twit-color;
+		color: $white;
+	}
+	&_face{
+		background-color: $face-color;
+		color: $white;
+	}
 }
 
-.author_nick{
-	color:$violet-color;
-}
-
-.social_link{
-	display: inline-block;
-	margin: 2em;
-	padding: 1em 5em;
-	text-decoration: none;
-}
-
-.git{
-	background-color: $light-grey;
-	color: $black;
-}
-
-.twit{
-	background-color: $twit-color;
-	color: $white;
-}
-
-.face{
-	background-color: $face-color;
-	color: $white;
+@media(max-width: 520px){
+	.social__link{
+		display: block;
+		margin:2em auto;
+	}
 }
 
 /*feedback and price blocks*/
@@ -139,97 +142,109 @@
 	border-bottom: 1px solid $feedback-bottom-color;
 }
 
-.heading_feedback{
+.heading-feedback{
 	padding: 1em;
 	color: $white;
 	font-size: 3em;
 	font-weight: bold;
+	text-align: center;
 }
 
 @media(max-width: 520px){
-	.heading_feedback{
+	.heading-feedback{
 		font-size: 2em;
 	}
 }
 
-.flex_feedback{
+.flex-feedback{
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	color: $white;
-}
-
-.feedback_article{
-	flex:30%;
-	text-align: center;
-	font-style: italic;
-	font-weight: bold;
-	margin-bottom: 2em;
-	line-height: 2;
+	&__article{
+		flex:30%;
+		text-align: center;
+		font-style: italic;
+		font-weight: bold;
+		margin-bottom: 3em;
+		line-height: 1.5;
+	}
 }
 
 @media(max-width: 520px){
-	.flex_feedback{
+	.flex-feedback{
 		flex-direction: column;
 	}
 
-	.feedback_article{
+	.flex-feedback__article{
 		padding: 0 5em 0 5em;
 	}
 }
 
 .logo_feed{
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 
+/*price block*/
 .price{
 	background-color: $dark-violet;
 }
 
-.flex_price{
+.flex-price{
 	display: flex;
 	justify-content: center;
 	align-items: stretch;
 }
 
-.cost_block{
+.cost-block{
 	background-color: $light-violet;
 	text-align: center;
 	margin:0 1em 1em 1em;
-}
-
-.cost_block:hover{
-	background-color: $dark-violet-hover;
+	&:hover{
+		background-color: $dark-violet-hover;
+	}
+	&__tarif{
+		text-transform: uppercase;
+		font-weight: bold;
+		color:$white; 
+		padding: 1em;
+		background-color: $half-opacity-grey;
+	}
+	&__money{
+		color: $white;
+		font-size: 3em;
+		font-weight: bold;
+		padding: 1em;
+	}
+	&__period{
+		text-transform: uppercase;
+		color:$grey-text;
+		font-size: .8em;
+	}
+	&__get{
+		color:$white;
+		font-weight: bold;
+	}
+	&__accept-button{
+		display: inline-block;
+		background-color: $half-opacity-grey;
+		color: $white;
+		margin:2em 0 1em 0;
+		padding: .5em 2em;
+		border:0;
+		border-radius: 1em;
+		text-transform: uppercase;
+	}
 }
 
 @media(max-width: 520px){
-	.flex_price{
+	.flex-price{
 		flex-direction: column;
 	}
 
-	.cost_block{
+	.cost-block{
 		margin: 0 5em 2em 5em;
 	}
-}
-
-.tarif_type{
-	text-transform: uppercase;
-	font-weight: bold;
-	color:$white; 
-	padding: 1em;
-	background-color: $half-opacity-grey;
-}
-
-.money{
-	color: $white;
-	font-size: 3em;
-	font-weight: bold;
-	padding: 1em;
-}
-
-.period{
-	text-transform: uppercase;
-	color:$grey-text;
-	font-size: .8em;
 }
 
 .line{
@@ -238,23 +253,7 @@
 	margin:1em auto;
 }
 
-.what_you_get{
-	color:$white;
-	font-weight: bold;
-}
-
-.accept_button{
-	display: inline-block;
-	background-color: $half-opacity-grey;
-	color: $white;
-	margin:2em 0 1em 0;
-	padding: .5em 2em;
-	border:0;
-	border-radius: 1em;
-	text-transform: uppercase;
-}
-
-.price_description{
+.price-description{
 	color: $half-opacity-grey;
 	font-size: .5em;
 	text-align: center;
@@ -265,9 +264,22 @@
 .subscribe{
 	background-color:$light-grey;
 	padding: 1em;
+	&__input{
+		width: 30%;
+		padding: .5em 0 .5em .5em;
+		border-radius: 2em;
+		border:0;
+	}
+	&__button{
+		color:$white;
+		border:0;
+		border-radius: 1em;
+		padding: .5em 1em;
+		background-color: $dark-violet;
+	}
 }
 
-.subscribe_heading{
+.subscribe-heading{
 	display: inline-block;
 	font-size: 2em;
 	font-weight: bold;
@@ -276,7 +288,7 @@
 }
 
 @media(max-width: 520px){
-	.subscribe_heading{
+	.subscribe-heading{
 		display: block;
 		text-align: center;
 		margin-right: 0;
@@ -284,23 +296,8 @@
 	}
 }
 
-.email_input{
-	width: 30%;
-	padding: .5em 0 .5em .5em;
-	border-radius: 2em;
-	border:0;
-}
-
 @media(max-width: 520px){
-	.email_input{
+	.subscribe__input{
 		width: 75%;
 	}
-}
-
-.subscribe_button{
-	color:$white;
-	border:0;
-	border-radius: 1em;
-	padding: .5em 1em;
-	background-color: $dark-violet;
 }
