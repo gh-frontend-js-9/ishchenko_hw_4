@@ -2,13 +2,24 @@
 	background-color: $light-grey;
 }
 
-.flex{
-	display: flex;
-	padding: 2em;
+.get-heading{
+	font-size: calc(.5em + 3vw);
+	font-weight: bold;
+	color: $violet-color;
+	text-transform: uppercase;
+	text-align: right;
+	padding: .5em;
 }
 
-.features{
-	margin:1.5em;
+@media(max-width: 520px) {
+	.get-heading{
+		text-align: center;
+	}
+}
+
+.flex{
+	display: flex;
+	padding-bottom: 3em; 
 }
 
 .article-features{
@@ -16,7 +27,7 @@
 	&__heading{
 		line-height: 2;
 		font-weight: bold;
-		padding: 1em;
+		padding: .5em;
 	}
 	&__text{
 		font-size: .9em;
@@ -57,27 +68,19 @@
 	background-image:url(/img/icon_created.png);
 }
 
-.code-example{
-	position: relative;
-}
-
-@media(max-width: 520px){
-	.code-example{
-		display: none;
+.example{
+	&__code{
+		width: 50%;
+		position:absolute;
+		right: 0; 
 	}
 }
 
-.code-heading{
-	font-size: 2.7em;
-	font-weight: bold;
-	color: $violet-color;
-	text-transform: uppercase;
-	padding-bottom: 1em;
-}
 
-.code{
-	position: absolute;
-	left: 6em;
+@media(max-width: 800px){
+	.example__code{
+		display: none;
+	}
 }
 
 /*author block*/
@@ -85,7 +88,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 1em;
+	padding: 3em;
 	&__plays{
 		width: 100px;
 		height: 100px;
@@ -129,6 +132,10 @@
 	}
 }
 
+i{
+	display: block;
+}
+
 @media(max-width: 520px){
 	.social__link{
 		display: block;
@@ -160,14 +167,18 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	color: $white;
 	&__article{
 		flex:30%;
+		margin-bottom: 3em;
 		text-align: center;
+	}
+	&__text{
+		color: $white;
+		font-size: .8em;
+		line-height: 1.5;
 		font-style: italic;
 		font-weight: bold;
-		margin-bottom: 3em;
-		line-height: 1.5;
+		padding: 1em;
 	}
 }
 
@@ -193,7 +204,7 @@
 .flex-price{
 	display: flex;
 	justify-content: center;
-	align-items: stretch;
+	flex-wrap: wrap;
 }
 
 .cost-block{

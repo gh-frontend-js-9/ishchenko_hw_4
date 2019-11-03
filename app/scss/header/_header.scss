@@ -20,14 +20,16 @@
 		padding: 1em;
 	}
 	&__links{
+		font-size: .8em;
 		display: block;
 		color: $links-color;
 		text-decoration: none;
 		font-weight: bold;
-		margin-right: 1.5em;
+		margin-right: 1em;
 	}
 	&__button{
-		width: 60%;
+		width: 40%;
+		font-size: .8em;
 		border-radius: 1.5em;
 		padding: .5em 0 .5em 0;
 		border:0;
@@ -48,11 +50,11 @@
 	.nav-list__links{
 		display: none;
 	}
-}
-
-@media(max-width: 520px){
 	.nav-list__side-burger{
 		display: block;
+	}
+	.nav-list__button{
+		width: 50%;
 	}
 }
 
@@ -94,16 +96,10 @@
 		background: url(/img/background_header_mobile.png) no-repeat center center;
 		background-size: cover;
 	}
-}
-
-@media(max-width: 520px){
 	.main-heading__fork-app{
 		font-size: 4rem;
 		padding: .2em;
 	}
-}
-
-@media(max-width: 520px){
 	.main-heading__description{
 		font-size: 1.5em;
 		padding: .5em;
@@ -112,12 +108,13 @@
 
 .central-button{
 	position: relative;
-	top: 1em;
+	top: 2em;
 	text-align: center;
 	&__download_button{
 		border:0;
-		padding: .5em 2em;
-		border-radius: 1em;
+		font-size: 1.5em;
+		padding: .6em 3em;
+		border-radius: 1.5em;
 		color: $white;
 		font-weight: bold;
 		background-color: $violet-color;
@@ -129,13 +126,14 @@
 }
 
 .trial-period{
-	margin: 1.5em;
+	font-size: .8em;
+	padding: 3em;
 	color:#848e97;
 	text-align: center;
 }
 
 .heading-about{
-	font-size: 4em;
+	font-size: calc(.5em + 4vw);
 	color:$violet-color;
 	font-weight: bold;
 	padding: .5em;
@@ -143,14 +141,8 @@
 	text-align: center;
 }
 
-@media(max-width: 520px){
-	.heading-about{
-		font-size: 3em;
-	}
-}
-
 .text-about{
-	line-height: 2;
+	line-height: 1.5;
 	padding: 1em;
 	text-align: center;
 }
@@ -158,5 +150,8 @@
 
 .icons{
 	text-align: center;
-	margin:1em;
+	padding: 2em;
+	&__img{
+		width: 60vmin;
+	}
 }
