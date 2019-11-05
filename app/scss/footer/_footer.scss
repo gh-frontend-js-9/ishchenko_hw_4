@@ -5,13 +5,11 @@
 		flex:30%;
 		margin:1em;
 	}
-	&__item2{
-		flex:25%;
-	}
 	&__heading{
 		font-size: 2em;
 		padding: 1em;
 		padding-left: 0;
+		padding-right: 0;
 		color: $light-grey-heading;
 		font-weight: bold;
 	}
@@ -37,30 +35,22 @@
 }
 
 .lower-heading{
-	font-weight: bold;
-	padding: 1em;
-	padding-left: 0;
+	@include footer-heading
 	&_color_violet{
 		color:$dark-violet;
 	}
 }
 
-.text{
-	font-size: .8em;
-	line-height: 2;
-	color: $dast-grey;
-}
-
 .lower-footer-heading{
-	font-weight: bold;
-	padding: 1em;
-	padding-left: 0;
+	@include footer-heading
 }
 
 .list-footer{
 	line-height: 1.5;
 	font-weight: bold;
-	text-decoration: none;
+	&__item{
+		text-decoration: none;
+	}
 }
 
 .author-number{

@@ -1,12 +1,18 @@
 /*navigation in header*/
+.flex-panel{
+	display: flex;
+	align-items: center;
+	padding: .5em;
+}
+
 .logo-link{
-	text-decoration: none;
-	font-weight: bold;
+	flex:1;
+	font-weight: 700;
 	&__fork-name{
-		margin-left: .5em;
+		color: $violet-color;
 		text-transform: uppercase;
 	}
-	&__fork-color{
+	&_fork_color{
 		color: $black;
 	}
 }
@@ -14,52 +20,38 @@
 .nav-list{
 	display: flex;
 	list-style-type: none;
-	align-items: center;
-	padding: .5em;
-	&_padding_s{
-		padding: 1em;
-	}
 	&__links{
-		font-size: .8em;
-		display: block;
+		padding: 0 1em;
+		display: block; 
 		color: $links-color;
 		text-decoration: none;
 		font-weight: bold;
-		margin-right: 1em;
 	}
-	&__button{
-		width: 40%;
-		font-size: .8em;
-		border-radius: 1.5em;
-		padding: .5em 0 .5em 0;
-		border:0;
-		background-color: $violet-color;
-		color:$white;
-		font-weight: bold;
+}
+
+.butt{
+	flex:1;
+	&__buy{
+		padding: .5em 1em;
+		border-radius: 1em;
+		&:hover{
+			background-color: $white;
+			color: $links-color;
+		}
 	}
-	&__button:hover{
-		background-color: $white;
-		color: $links-color;
-	}
-	&__side-burger{
-		display: none;
-	}
+}
+
+.side-burger{
+	display: none;
 }
 
 @media(max-width: 520px){
-	.nav-list__links{
+	.nav-list{
 		display: none;
 	}
-	.nav-list__side-burger{
+	.side-burger{
 		display: block;
 	}
-	.nav-list__button{
-		width: 50%;
-	}
-}
-
-.flex-item{
-	flex:3;
 }
 
 /*main heading*/
@@ -111,13 +103,9 @@
 	top: 2em;
 	text-align: center;
 	&__download_button{
-		border:0;
 		font-size: 1.5em;
 		padding: .6em 3em;
 		border-radius: 1.5em;
-		color: $white;
-		font-weight: bold;
-		background-color: $violet-color;
 		&:hover{
 			color:$black;
 			background-color: $white;
@@ -152,6 +140,6 @@
 	text-align: center;
 	padding: 2em;
 	&__img{
-		width: 60vmin;
+		width:calc(50% * 1vw);
 	}
 }

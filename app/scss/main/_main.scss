@@ -23,7 +23,6 @@
 }
 
 .article-features{
-	width: 100%;
 	&__heading{
 		line-height: 2;
 		font-weight: bold;
@@ -70,12 +69,12 @@
 
 .example{
 	&__code{
-		width: 50%;
+		max-height: 650px;
+		width: 50vw;
 		position:absolute;
 		right: 0; 
 	}
 }
-
 
 @media(max-width: 800px){
 	.example__code{
@@ -110,12 +109,23 @@
 }
 
 .social{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
+	&__block{
+		padding: 1em;
+	}
+	&__counter{
+		font-size: .5em;
+		padding: 1em;
+	}
 	&__link{
-		display: inline-block;
-		margin: 2em;
-		width: 25%;
-		padding: 1em 5em;
+		display: block;
+		width: 100%;
+		max-width: 150px;
+		font-size: 1em; 
+		padding: .5em 3em;
 		text-decoration: none;
 	}
 	&_git{
@@ -132,14 +142,9 @@
 	}
 }
 
-i{
-	display: block;
-}
-
 @media(max-width: 520px){
-	.social__link{
-		display: block;
-		margin:2em auto;
+	.social{
+		flex-direction: column;
 	}
 }
 
@@ -172,16 +177,22 @@ i{
 		margin-bottom: 3em;
 		text-align: center;
 	}
-	&__text{
-		color: $white;
-		font-size: .8em;
-		line-height: 1.5;
-		font-style: italic;
-		font-weight: bold;
-		padding: 1em;
-	}
 }
 
+.feedback__text{
+		margin: 1em;
+	}
+
+.tx-f{
+	font-style: italic;
+	font-weight: bold;
+	color: $white;
+	&_size_s{
+		font-size: .8em;
+		line-height: 1.5;
+		}
+	}	
+		
 @media(max-width: 520px){
 	.flex-feedback{
 		flex-direction: column;
@@ -208,16 +219,18 @@ i{
 }
 
 .cost-block{
-	background-color: $light-violet;
 	text-align: center;
-	margin:0 1em 1em 1em;
+	background-color: $light-violet;
+	flex: 25%;
+	margin: 1em;
+	max-width: 220px;
 	&:hover{
 		background-color: $dark-violet-hover;
 	}
 	&__tarif{
 		text-transform: uppercase;
 		font-weight: bold;
-		color:$white; 
+		color: $white; 
 		padding: 1em;
 		background-color: $half-opacity-grey;
 	}
@@ -233,14 +246,15 @@ i{
 		font-size: .8em;
 	}
 	&__get{
+		font-size: .8em;
+		padding: .5em;
 		color:$white;
 		font-weight: bold;
 	}
 	&__accept-button{
-		display: inline-block;
+		margin: 2em 0 1em 0;
 		background-color: $half-opacity-grey;
 		color: $white;
-		margin:2em 0 1em 0;
 		padding: .5em 2em;
 		border:0;
 		border-radius: 1em;
@@ -252,9 +266,9 @@ i{
 	.flex-price{
 		flex-direction: column;
 	}
-
 	.cost-block{
-		margin: 0 5em 2em 5em;
+		margin: 1em auto;
+		max-width: 190px;
 	}
 }
 
@@ -282,11 +296,8 @@ i{
 		border:0;
 	}
 	&__button{
-		color:$white;
-		border:0;
 		border-radius: 1em;
 		padding: .5em 1em;
-		background-color: $dark-violet;
 	}
 }
 
