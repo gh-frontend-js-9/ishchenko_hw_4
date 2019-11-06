@@ -1,0 +1,145 @@
+/*navigation in header*/
+.flex-panel{
+	display: flex;
+	align-items: center;
+	padding: .5em;
+}
+
+.logo-link{
+	flex:1;
+	font-weight: 700;
+	&__fork-name{
+		color: $violet-color;
+		text-transform: uppercase;
+	}
+	&_fork_color{
+		color: $black;
+	}
+}
+
+.nav-list{
+	display: flex;
+	list-style-type: none;
+	&__links{
+		padding: 0 1em;
+		display: block; 
+		color: $links-color;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+
+.butt{
+	flex:1;
+	&__buy{
+		padding: .5em 1em;
+		border-radius: 1em;
+		&:hover{
+			background-color: $white;
+			color: $links-color;
+		}
+	}
+}
+
+.side-burger{
+	display: none;
+}
+
+@media(max-width: 520px){
+	.nav-list{
+		display: none;
+	}
+	.side-burger{
+		display: block;
+	}
+}
+
+/*main heading*/
+.main-heading{
+	background: url(/img/background_header.png) no-repeat center center;
+	background-size: cover;
+	&_padding_l{
+		padding: 4em 0 25em 0; 
+	}
+	&__fork-app{
+		font-size: 5em;
+		font-weight: bold;
+		color: $white;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	&__description{
+		font-size: 2em;
+		line-height: 2;
+		color:$violet-color;
+		margin: 0;
+		text-align: center;
+	}
+	&__fork-version{
+		color: #848e97;
+		margin-top: 0;
+		font-weight: lighter;
+		text-align: center;
+	}
+}
+
+@media(max-width: 520px){
+	.main-heading{
+		background: url(/img/background_header_mobile.png) no-repeat center center;
+		background-size: cover;
+	}
+	.main-heading__fork-app{
+		font-size: 4rem;
+		padding: .2em;
+	}
+	.main-heading__description{
+		font-size: 1.5em;
+		padding: .5em;
+	}
+}
+
+.central-button{
+	position: relative;
+	top: 2em;
+	text-align: center;
+	&__download_button{
+		font-size: 1.5em;
+		padding: .6em 3em;
+		border-radius: 1.5em;
+		&:hover{
+			color:$black;
+			background-color: $white;
+		}
+	}
+}
+
+.trial-period{
+	font-size: .8em;
+	padding: 3em;
+	color:#848e97;
+	text-align: center;
+}
+
+.heading-about{
+	font-size: calc(.5em + 4vw);
+	color:$violet-color;
+	font-weight: bold;
+	padding: .5em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.text-about{
+	line-height: 1.5;
+	padding: 1em;
+	text-align: center;
+}
+
+
+.icons{
+	text-align: center;
+	padding: 2em;
+	&__img{
+		width:calc(50% * 1vw);
+	}
+}

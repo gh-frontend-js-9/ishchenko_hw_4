@@ -1,0 +1,35 @@
+:root{
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+}
+
+*,
+::after,
+::before{
+	box-sizing: inherit;
+}
+
+@mixin footer-heading{
+	font-weight: bold;
+	padding: 1em;
+	padding-left: 0;
+}
+
+.wrapper{
+	max-width: 1100px;
+	width:100%;
+	margin:0 auto;
+}
+
+.text{
+	font-size: .8em;
+	line-height: 2;
+	color: $dast-grey;
+}
+
+.btn{
+	border:0;
+	font-weight: bold;
+	color:$white;
+	background-color: $violet-color;
+}

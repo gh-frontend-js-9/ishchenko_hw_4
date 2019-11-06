@@ -1,0 +1,325 @@
+.features_background{
+	background-color: $light-grey;
+}
+
+.get-heading{
+	font-size: calc(.5em + 3vw);
+	font-weight: bold;
+	color: $violet-color;
+	text-transform: uppercase;
+	text-align: right;
+	padding: .5em;
+}
+
+@media(max-width: 520px) {
+	.get-heading{
+		text-align: center;
+	}
+}
+
+.flex{
+	display: flex;
+	padding-bottom: 3em; 
+}
+
+.article-features{
+	&__heading{
+		line-height: 2;
+		font-weight: bold;
+		padding: .5em;
+	}
+	&__text{
+		font-size: .9em;
+		line-height: 1.5;
+		overflow: auto;
+	}
+}
+
+.img-style{
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	width: 120px;
+	height: 100px;
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
+.make-web-better{
+	background-image:url(/img/icon_better.png);
+}
+
+.power-tool{
+	background-image:url(/img/icon_powerfull.png);
+}
+
+.experimental-stuff{
+	background-image:url(/img/icon_stuff.png);
+}
+
+.created{
+	background-image:url(/img/icon_created.png);
+}
+
+.example{
+	&__code{
+		max-height: 650px;
+		width: 50vw;
+		position:absolute;
+		right: 0; 
+	}
+}
+
+@media(max-width: 800px){
+	.example__code{
+		display: none;
+	}
+}
+
+/*author block*/
+.photo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3em;
+	&__plays{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: $violet-color;
+	}
+}
+
+.side{
+	margin-left: 1em;
+	&__author-name{
+		font-weight: bold;
+		font-size: 1.5em;
+		line-height: 2; 
+	}
+	&__author-nick{
+		color:$violet-color;
+	}
+}
+
+.social{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&__block{
+		padding: 1em;
+	}
+	&__counter{
+		font-size: .5em;
+		padding: 1em;
+	}
+	&__link{
+		display: block;
+		width: 100%;
+		max-width: 150px;
+		font-size: 1em; 
+		padding: .5em 3em;
+		text-decoration: none;
+	}
+	&_git{
+		background-color: $light-grey;
+		color: $black;
+	}
+	&_twit{
+		background-color: $twit-color;
+		color: $white;
+	}
+	&_face{
+		background-color: $face-color;
+		color: $white;
+	}
+}
+
+@media(max-width: 520px){
+	.social{
+		flex-direction: column;
+	}
+}
+
+/*feedback and price blocks*/
+.feedback{
+	background-color: $dark-violet;
+	border-bottom: 1px solid $feedback-bottom-color;
+}
+
+.heading-feedback{
+	padding: 1em;
+	color: $white;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media(max-width: 520px){
+	.heading-feedback{
+		font-size: 2em;
+	}
+}
+
+.flex-feedback{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	&__article{
+		flex:30%;
+		margin-bottom: 3em;
+		text-align: center;
+	}
+}
+
+.feedback__text{
+		margin: 1em;
+	}
+
+.tx-f{
+	font-style: italic;
+	font-weight: bold;
+	color: $white;
+	&_size_s{
+		font-size: .8em;
+		line-height: 1.5;
+		}
+	}	
+		
+@media(max-width: 520px){
+	.flex-feedback{
+		flex-direction: column;
+	}
+
+	.flex-feedback__article{
+		padding: 0 5em 0 5em;
+	}
+}
+
+.logo_feed{
+	margin-bottom: 2em;
+}
+
+/*price block*/
+.price{
+	background-color: $dark-violet;
+}
+
+.flex-price{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.cost-block{
+	text-align: center;
+	background-color: $light-violet;
+	flex: 25%;
+	margin: 1em;
+	max-width: 220px;
+	&:hover{
+		background-color: $dark-violet-hover;
+	}
+	&__tarif{
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $white; 
+		padding: 1em;
+		background-color: $half-opacity-grey;
+	}
+	&__money{
+		color: $white;
+		font-size: 3em;
+		font-weight: bold;
+		padding: 1em;
+	}
+	&__period{
+		text-transform: uppercase;
+		color:$grey-text;
+		font-size: .8em;
+	}
+	&__get{
+		font-size: .8em;
+		padding: .5em;
+		color:$white;
+		font-weight: bold;
+	}
+	&__accept-button{
+		margin: 2em 0 1em 0;
+		background-color: $half-opacity-grey;
+		color: $white;
+		padding: .5em 2em;
+		border:0;
+		border-radius: 1em;
+		text-transform: uppercase;
+	}
+}
+
+@media(max-width: 520px){
+	.flex-price{
+		flex-direction: column;
+	}
+	.cost-block{
+		margin: 1em auto;
+		max-width: 190px;
+	}
+}
+
+.line{
+	border:2px solid $half-opacity-grey;
+	width: 20%;
+	margin:1em auto;
+}
+
+.price-description{
+	color: $half-opacity-grey;
+	font-size: .5em;
+	text-align: center;
+	padding: 2em;
+}
+
+/*Subscribe input*/
+.subscribe{
+	background-color:$light-grey;
+	padding: 1em;
+	&__input{
+		width: 30%;
+		padding: .5em 0 .5em .5em;
+		border-radius: 2em;
+		border:0;
+	}
+	&__button{
+		border-radius: 1em;
+		padding: .5em 1em;
+	}
+}
+
+.subscribe-heading{
+	display: inline-block;
+	font-size: 2em;
+	font-weight: bold;
+	color:$dark-violet;
+	margin-right: 3em;
+}
+
+@media(max-width: 520px){
+	.subscribe-heading{
+		display: block;
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 1em;
+	}
+}
+
+@media(max-width: 520px){
+	.subscribe__input{
+		width: 75%;
+	}
+}
